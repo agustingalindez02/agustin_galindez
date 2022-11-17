@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ededf1;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+header .navbar-expand-lg .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+header .navbar .container-fluid {
+  align-items: center;
+}
+header .navbar .container-fluid p {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+header .navbar .navbar-nav .nav-link {
+  color: #ffffff;
+}
+header .profile {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .profile div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  width: 100%;
+}
+header .profile div h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 5.5rem;
+}
+header .profile div img {
+  box-shadow: 20px;
+  display: flex;
+  justify-content: center;
+  width: 87%;
+  border: solid 3px;
+  border-radius: 50%;
+}
+
+#about-me {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.5s ease all;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about-me h2 {
+  font-weight: bold;
+}
+#about-me .hobbies {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#about-me .hobbies h3 {
+  font-weight: bold;
+}
+
+#about-me.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#skills {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.5s ease all;
+  padding: 4%;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+#skills h2 {
+  text-align: center;
+  font-weight: bold;
+}
+#skills p {
+  text-align: center;
+}
+#skills .knowledge {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+}
+#skills .knowledge img {
+  width: 60px;
+}
+#skills .knowledge h3 {
+  text-align: center;
+}
+#skills .knowledge .front-end {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  padding: 5%;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#skills .knowledge .front-end #html {
+  grid-area: img1;
+}
+#skills .knowledge .front-end #css {
+  grid-area: img2;
+}
+#skills .knowledge .front-end #node {
+  grid-area: img3;
+}
+#skills .knowledge .front-end #sass {
+  grid-area: img4;
+}
+#skills .knowledge .front-end #js {
+  grid-area: img5;
+}
+#skills .knowledge .front-end #react {
+  grid-area: img6;
+}
+#skills .knowledge .front-end #git {
+  grid-area: img7;
+}
+#skills .knowledge .front-end #github {
+  grid-area: img8;
+}
+#skills .knowledge .design {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5%;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#skills .knowledge .design #photoshop {
+  grid-area: img1;
+}
+#skills .knowledge .design #ilustrator {
+  grid-area: img2;
+}
+#skills .knowledge .design #lightroom {
+  grid-area: img3;
+}
+#skills .knowledge .design #figma {
+  grid-area: img4;
+}
+#skills .knowledge .back-end {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  padding: 5%;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4" "img5 img5";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#skills .knowledge .back-end #php {
+  grid-area: img1;
+}
+#skills .knowledge .back-end #sql {
+  grid-area: img2;
+}
+#skills .knowledge .back-end #npm {
+  grid-area: img3;
+}
+#skills .knowledge .back-end #nodejs {
+  grid-area: img4;
+}
+#skills .knowledge .back-end #javascript {
+  grid-area: img5;
+  justify-self: center;
+}
+
+#skills.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#projects {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.5s ease all;
+  padding: 6%;
+  background-color: #ededf1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+#projects .card {
+  margin: 3%;
+  background-color: #ededf1;
+  border: none;
+  width: 300px;
+  text-decoration: none;
+}
+#projects .card a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+#projects .card a h3 {
+  margin: 3%;
+  font-weight: bold;
+}
+#projects .card img {
+  width: 100%;
+}
+
+#projects.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#contact {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.5s ease all;
+  padding: 6%;
+  background-color: #e8e8e8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h2 {
+  font-weight: bold;
+}
+#contact p {
+  text-align: center;
+}
+#contact .socials {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+#contact .socials a {
+  width: 50px;
+}
+
+#contact.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}/*# sourceMappingURL=style.css.map */

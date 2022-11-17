@@ -1,0 +1,60 @@
+@import "../colors/colors";
+
+header {
+    .navbar-expand-lg {
+        .navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .navbar {
+        .container-fluid {
+            align-items: center;
+
+            p {
+                margin-bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $secondary;
+            }
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: $secondary;
+            }
+        }
+
+    }
+
+    .profile {
+        color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-wrap:wrap;
+            margin: 1%;
+            width: 100%;
+
+            h1 {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 5.5rem;
+            }
+
+            img {
+                box-shadow: 20px;
+                display: flex;
+                justify-content: center;
+                width: 87%;
+                border: solid 3px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,271 @@
+@import "../colors/colors";
+
+#about-me {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.5s ease all;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h2 {
+        font-weight: bold;
+    }
+
+    .hobbies {
+        margin: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: baseline;
+
+        h3{
+            font-weight: bold;
+        }
+    }
+}
+
+#about-me.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#skills {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.5s ease all;
+    padding: 4%;
+    width: 100%;
+    background-color: $backGroundColor1;
+
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .knowledge {
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 150px;
+
+        img {
+            width: 60px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .front-end {
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+            padding: 5%;
+            gap: 15px;
+            display: grid;
+            grid-template-areas: "img1 img2"
+                "img3 img4"
+                "img5 img6"
+                "img7 img8";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            #html {
+                grid-area: img1;
+            }
+
+            #css {
+                grid-area: img2;
+            }
+
+            #node {
+                grid-area: img3;
+            }
+
+            #sass {
+                grid-area: img4;
+            }
+
+            #js {
+                grid-area: img5;
+            }
+
+            #react {
+                grid-area: img6;
+            }
+
+            #git {
+                grid-area: img7;
+            }
+
+            #github {
+                grid-area: img8;
+            }
+        }
+
+        .design {
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 5%;
+            gap: 15px;
+            display: grid;
+            grid-template-areas: "img1 img2"
+                "img3 img4";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            #photoshop {
+                grid-area: img1;
+            }
+
+            #ilustrator {
+                grid-area: img2;
+            }
+
+            #lightroom {
+                grid-area: img3;
+            }
+
+            #figma {
+                grid-area: img4;
+            }
+        }
+
+        .back-end {
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+            padding: 5%;
+            gap: 15px;
+            display: grid;
+            grid-template-areas:"img1 img2"
+                                "img3 img4"
+                                "img5 img5";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            #php {
+                grid-area: img1;
+            }
+
+            #sql {
+                grid-area: img2;
+            }
+
+            #npm {
+                grid-area: img3;
+            }
+
+            #nodejs {
+                grid-area: img4;
+            }
+
+            #javascript {
+                grid-area: img5;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+#skills.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#projects {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.5s ease all;
+    padding: 6%;
+    background-color: $backGroundColor;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .card {
+        margin: 3%;
+        background-color: $backGroundColor;
+        border: none;
+        width: 300px;
+        text-decoration: none;
+
+        a {
+            color: $primary;
+            text-align: center;
+            text-decoration: none;
+
+            h3 {
+                margin: 3%;
+                font-weight: bold;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#projects.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#contact{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.5s ease all;
+    padding: 6%;
+    background-color: $backGroundColor1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .socials{
+        display: flex; 
+        gap: 20px;
+        align-items: baseline;
+
+        a{
+            width: 50px;
+        }
+    }
+}
+
+#contact.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
