@@ -16,6 +16,16 @@ html {
   font-size: 1rem;
   scroll-behavior: smooth;
 }
+html html ::-webkit-scrollbar {
+  width: 10px;
+}
+html html::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}
+html html::-webkit-scrollbar-track {
+  background: transparent;
+}
 
 header .navbar-expand-lg .navbar-collapse {
   display: flex;
