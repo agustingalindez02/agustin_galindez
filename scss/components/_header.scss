@@ -1,60 +1,34 @@
 @import "../colors/colors";
 
 header {
-    .navbar-expand-lg {
-        .navbar-collapse {
-            display: flex;
-            justify-content: flex-end;
-        }
+    #navbar{
+        width: 100%;
+        position: fixed;
     }
 
-    .navbar {
-        .container-fluid {
-            align-items: center;
-
-            p {
-                margin-bottom: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: $secondary;
-            }
-        }
-
-        .navbar-nav {
-            .nav-link {
-                color: $secondary;
-            }
-        }
-
+    .navbar-expand-md .navbar-collapse{
+        justify-content: flex-end;
     }
 
-    .profile {
-        color: $primary;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .navbar-toggler{
+        background-color: $secondary;
+    }
 
-        div {
-            display: flex;
-            flex-wrap:wrap;
-            margin: 1%;
-            width: 100%;
+    .navbar-brand {
+        text-transform: uppercase;
+        color: $secondary;
+    }
 
-            h1 {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 5.5rem;
-            }
+    .navbar-brand:hover {
+        color: $secondary;
+    }
 
-            img {
-                box-shadow: 20px;
-                display: flex;
-                justify-content: center;
-                width: 87%;
-                border: solid 3px;
-                border-radius: 50%;
-            }
-        }
+    .nav-link {
+        text-transform: uppercase;
+        color: $secondary;
+    }
+
+    .nav-link:hover {
+        color: $secondary;
     }
 }

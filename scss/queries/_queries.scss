@@ -1,0 +1,20 @@
+@import "../reset/reset";
+@import "../components/header";
+
+@media (max-width: 719px) {
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .picture{
+            justify-self: center;
+            width: 10%;
+        }
+
+        .h1{
+            text-align: center;
+        }
+    }
+}

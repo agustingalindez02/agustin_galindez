@@ -1,17 +1,24 @@
 @import "../colors/colors";
 
 #about-me {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: 0.5s ease all;
-    padding: 6%;
+    padding: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    .picture{
+        img{
+            border: solid 3px;
+            border-radius: 50%;
+            margin-bottom: 5%;
+            width: 200px;
+        }
+    }
+
 
     h2 {
+        text-align: center;
         font-weight: bold;
     }
 
@@ -23,31 +30,24 @@
         justify-content: space-between;
         align-items: baseline;
 
-        h3{
+        h3 {
             font-weight: bold;
         }
     }
 }
 
-#about-me.visible{
-    opacity: 1;
-    transform: translateY(0px);
-}
 
 #skills {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: 0.5s ease all;
-    padding: 4%;
+    padding: 7%;
     width: 100%;
     background-color: $backGroundColor1;
 
-    h2{
+    h2 {
         text-align: center;
         font-weight: bold;
     }
 
-    p{
+    p {
         text-align: center;
     }
 
@@ -152,9 +152,9 @@
             padding: 5%;
             gap: 15px;
             display: grid;
-            grid-template-areas:"img1 img2"
-                                "img3 img4"
-                                "img5 img5";
+            grid-template-areas: "img1 img2"
+                "img3 img4"
+                "img5 img5";
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
 
@@ -182,16 +182,9 @@
     }
 }
 
-#skills.visible{
-    opacity: 1;
-    transform: translateY(0px);
-}
 
 #projects {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: 0.5s ease all;
-    padding: 6%;
+    padding: 8%;
     background-color: $backGroundColor;
     width: 100%;
     display: flex;
@@ -205,40 +198,49 @@
         font-weight: bold;
     }
 
-    .card {
-        margin: 3%;
-        background-color: $backGroundColor;
-        border: none;
-        width: 300px;
-        text-decoration: none;
+    .portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        a {
-            color: $primary;
-            text-align: center;
+        .card {
+            height: max-content;
+            margin: 3%;
+            background-color: $backGroundColor;
+            border: none;
+            width: 300px;
             text-decoration: none;
+            filter: opacity(80%);
 
-            h3 {
-                margin: 3%;
-                font-weight: bold;
+            a {
+                color: $primary;
+                text-align: center;
+                text-decoration: none;
+
+                #h3gali{
+                    margin-top:30px ;
+                }
+
+                h3 {
+                    margin: 3%;
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                width: 100%;
             }
         }
 
-        img {
-            width: 100%;
+        .card:hover {
+            filter: opacity(100%);
+            transition: .4s;
         }
     }
 }
 
-#projects.visible{
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-#contact{
-    opacity: 0;
-    transform: scale(0.9);
-    transition: 0.5s ease all;
-    padding: 6%;
+#contact {
+    padding: 20%;
     background-color: $backGroundColor1;
     width: 100%;
     display: flex;
@@ -246,26 +248,27 @@
     justify-content: center;
     align-items: center;
 
+
     h2 {
         font-weight: bold;
     }
 
-    p{
+    p {
         text-align: center;
     }
 
-    .socials{
-        display: flex; 
+    .socials {
+        display: flex;
         gap: 20px;
         align-items: baseline;
 
-        a{
+        a {
             width: 50px;
         }
     }
-}
 
-#contact.visible{
-    opacity: 1;
-    transform: translateY(0px);
+    a:hover {
+        transition: .6s;
+        transform: translateY(-10px);
+    }
 }

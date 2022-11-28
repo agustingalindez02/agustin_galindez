@@ -16,71 +16,47 @@ html {
   font-size: 1rem;
   scroll-behavior: smooth;
 }
-html html ::-webkit-scrollbar {
-  width: 10px;
-}
-html html::-webkit-scrollbar-thumb {
-  background: #000000;
-  border-radius: 10px;
-}
-html html::-webkit-scrollbar-track {
-  background: transparent;
-}
 
-header .navbar-expand-lg .navbar-collapse {
-  display: flex;
+header #navbar {
+  width: 100%;
+  position: fixed;
+}
+header .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
 }
-header .navbar .container-fluid {
-  align-items: center;
+header .navbar-toggler {
+  background-color: #ffffff;
 }
-header .navbar .container-fluid p {
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header .navbar-brand {
+  text-transform: uppercase;
   color: #ffffff;
 }
-header .navbar .navbar-nav .nav-link {
+header .navbar-brand:hover {
   color: #ffffff;
 }
-header .profile {
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header .nav-link {
+  text-transform: uppercase;
+  color: #ffffff;
 }
-header .profile div {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1%;
-  width: 100%;
-}
-header .profile div h1 {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 5.5rem;
-}
-header .profile div img {
-  box-shadow: 20px;
-  display: flex;
-  justify-content: center;
-  width: 87%;
-  border: solid 3px;
-  border-radius: 50%;
+header .nav-link:hover {
+  color: #ffffff;
 }
 
 #about-me {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: 0.5s ease all;
-  padding: 6%;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#about-me .picture img {
+  border: solid 3px;
+  border-radius: 50%;
+  margin-bottom: 5%;
+  width: 200px;
+}
 #about-me h2 {
+  text-align: center;
   font-weight: bold;
 }
 #about-me .hobbies {
@@ -95,16 +71,8 @@ header .profile div img {
   font-weight: bold;
 }
 
-#about-me.visible {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 #skills {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: 0.5s ease all;
-  padding: 4%;
+  padding: 7%;
   width: 100%;
   background-color: #e8e8e8;
 }
@@ -217,16 +185,8 @@ header .profile div img {
   justify-self: center;
 }
 
-#skills.visible {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 #projects {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: 0.5s ease all;
-  padding: 6%;
+  padding: 8%;
   background-color: #ededf1;
   width: 100%;
   display: flex;
@@ -239,36 +199,44 @@ header .profile div img {
   justify-content: center;
   font-weight: bold;
 }
-#projects .card {
+#projects .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .portfolio .card {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: 3%;
   background-color: #ededf1;
   border: none;
   width: 300px;
   text-decoration: none;
+  filter: opacity(80%);
 }
-#projects .card a {
-  color: black;
+#projects .portfolio .card a {
+  color: #212529;
   text-align: center;
   text-decoration: none;
 }
-#projects .card a h3 {
+#projects .portfolio .card a #h3gali {
+  margin-top: 30px;
+}
+#projects .portfolio .card a h3 {
   margin: 3%;
   font-weight: bold;
 }
-#projects .card img {
+#projects .portfolio .card img {
   width: 100%;
 }
-
-#projects.visible {
-  opacity: 1;
-  transform: translateY(0px);
+#projects .portfolio .card:hover {
+  filter: opacity(100%);
+  transition: 0.4s;
 }
 
 #contact {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: 0.5s ease all;
-  padding: 6%;
+  padding: 20%;
   background-color: #e8e8e8;
   width: 100%;
   display: flex;
@@ -290,8 +258,67 @@ header .profile div img {
 #contact .socials a {
   width: 50px;
 }
+#contact a:hover {
+  transition: 0.6s;
+  transform: translateY(-10px);
+}
 
-#contact.visible {
-  opacity: 1;
-  transform: translateY(0px);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ededf1;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+header #navbar {
+  width: 100%;
+  position: fixed;
+}
+header .navbar-expand-md .navbar-collapse {
+  justify-content: flex-end;
+}
+header .navbar-toggler {
+  background-color: #ffffff;
+}
+header .navbar-brand {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+header .navbar-brand:hover {
+  color: #ffffff;
+}
+header .nav-link {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+header .nav-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 719px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile .picture {
+    justify-self: center;
+    width: 10%;
+  }
+  .profile .h1 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
