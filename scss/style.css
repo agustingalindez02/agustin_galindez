@@ -21,7 +21,7 @@ header #navbar {
   width: 100%;
   position: fixed;
 }
-header .navbar-expand-md .navbar-collapse {
+header .navbar-expand-sm .navbar-collapse {
   justify-content: flex-end;
 }
 header .navbar-toggler {
@@ -72,7 +72,7 @@ header .nav-link:hover {
 }
 
 #skills {
-  padding: 7%;
+  padding: 6%;
   width: 100%;
   background-color: #e8e8e8;
 }
@@ -282,43 +282,254 @@ html {
   scroll-behavior: smooth;
 }
 
-header #navbar {
-  width: 100%;
-  position: fixed;
+#about-me {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header .navbar-expand-md .navbar-collapse {
-  justify-content: flex-end;
+#about-me .picture img {
+  border: solid 3px;
+  border-radius: 50%;
+  margin-bottom: 5%;
+  width: 200px;
 }
-header .navbar-toggler {
-  background-color: #ffffff;
+#about-me h2 {
+  text-align: center;
+  font-weight: bold;
 }
-header .navbar-brand {
-  text-transform: uppercase;
-  color: #ffffff;
+#about-me .hobbies {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: baseline;
 }
-header .navbar-brand:hover {
-  color: #ffffff;
-}
-header .nav-link {
-  text-transform: uppercase;
-  color: #ffffff;
-}
-header .nav-link:hover {
-  color: #ffffff;
+#about-me .hobbies h3 {
+  font-weight: bold;
 }
 
-@media (max-width: 719px) {
-  .profile {
+#skills {
+  padding: 6%;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+#skills h2 {
+  text-align: center;
+  font-weight: bold;
+}
+#skills p {
+  text-align: center;
+}
+#skills .knowledge {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+}
+#skills .knowledge img {
+  width: 60px;
+}
+#skills .knowledge h3 {
+  text-align: center;
+}
+#skills .knowledge .front-end {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  padding: 5%;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#skills .knowledge .front-end #html {
+  grid-area: img1;
+}
+#skills .knowledge .front-end #css {
+  grid-area: img2;
+}
+#skills .knowledge .front-end #node {
+  grid-area: img3;
+}
+#skills .knowledge .front-end #sass {
+  grid-area: img4;
+}
+#skills .knowledge .front-end #js {
+  grid-area: img5;
+}
+#skills .knowledge .front-end #react {
+  grid-area: img6;
+}
+#skills .knowledge .front-end #git {
+  grid-area: img7;
+}
+#skills .knowledge .front-end #github {
+  grid-area: img8;
+}
+#skills .knowledge .design {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5%;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#skills .knowledge .design #photoshop {
+  grid-area: img1;
+}
+#skills .knowledge .design #ilustrator {
+  grid-area: img2;
+}
+#skills .knowledge .design #lightroom {
+  grid-area: img3;
+}
+#skills .knowledge .design #figma {
+  grid-area: img4;
+}
+#skills .knowledge .back-end {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  padding: 5%;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: "img1 img2" "img3 img4" "img5 img5";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#skills .knowledge .back-end #php {
+  grid-area: img1;
+}
+#skills .knowledge .back-end #sql {
+  grid-area: img2;
+}
+#skills .knowledge .back-end #npm {
+  grid-area: img3;
+}
+#skills .knowledge .back-end #nodejs {
+  grid-area: img4;
+}
+#skills .knowledge .back-end #javascript {
+  grid-area: img5;
+  justify-self: center;
+}
+
+#projects {
+  padding: 8%;
+  background-color: #ededf1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+#projects .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .portfolio .card {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 3%;
+  background-color: #ededf1;
+  border: none;
+  width: 300px;
+  text-decoration: none;
+  filter: opacity(80%);
+}
+#projects .portfolio .card a {
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+}
+#projects .portfolio .card a #h3gali {
+  margin-top: 30px;
+}
+#projects .portfolio .card a h3 {
+  margin: 3%;
+  font-weight: bold;
+}
+#projects .portfolio .card img {
+  width: 100%;
+}
+#projects .portfolio .card:hover {
+  filter: opacity(100%);
+  transition: 0.4s;
+}
+
+#contact {
+  padding: 20%;
+  background-color: #e8e8e8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h2 {
+  font-weight: bold;
+}
+#contact p {
+  text-align: center;
+}
+#contact .socials {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+#contact .socials a {
+  width: 50px;
+}
+#contact a:hover {
+  transition: 0.6s;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 600px) {
+  .portfolio {
     display: flex;
+    flex-wrap: wrap;
+  }
+  #about-me {
+    padding: 15%;
+  }
+  #skills {
+    padding: 15%;
+  }
+  #projects {
+    padding: 20%;
+  }
+}
+@media (max-width: 400px) {
+  #about-me {
+    padding: 20%;
+  }
+  #about-me .hobbies {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .profile .picture {
-    justify-self: center;
-    width: 10%;
+  #contact {
+    padding: 15%;
   }
-  .profile .h1 {
-    text-align: center;
+  #contact h2 {
+    display: flex;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

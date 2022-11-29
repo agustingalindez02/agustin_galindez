@@ -1,20 +1,40 @@
 @import "../reset/reset";
-@import "../components/header";
+@import "../components/main";
 
-@media (max-width: 719px) {
-    .profile{
+@media (max-width: 600px) {
+    .portfolio {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+    }
 
-        .picture{
-            justify-self: center;
-            width: 10%;
+    #about-me {
+        padding: 15%;
+    }
+
+    #skills{
+        padding: 15%;
+    }
+
+    #projects{
+        padding: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+    #about-me {
+        padding: 20%;
+
+        .hobbies {
+            flex-direction: column;
         }
+    }
 
-        .h1{
-            text-align: center;
+    #contact {
+        padding: 15%;
+
+        h2 {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 }
