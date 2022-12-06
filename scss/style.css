@@ -68,6 +68,7 @@ header .nav-link:hover {
 }
 #home .socials {
   margin: 5rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -235,7 +236,7 @@ header .nav-link:hover {
   justify-self: center;
 }
 #skills .education {
-  margin: 3rem;
+  margin: 5rem;
 }
 #skills .education h4 {
   text-align: center;
@@ -245,65 +246,76 @@ header .nav-link:hover {
   margin-right: 0.5rem;
   width: 3rem;
 }
+#skills .education .grades {
+  margin: 3rem;
+}
+#skills .education .grades h3 {
+  font-weight: bold;
+}
+#skills .education .grades .calendar {
+  display: flex;
+}
+#skills .education .grades .calendar img {
+  margin: 0;
+  width: 3rem;
+}
+#skills .education .grades .calendar p {
+  align-self: center;
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 5rem;
+}
+
+#services {
+  background-color: #e7e7e7;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#services h2 {
+  font-weight: bold;
+}
 
 #projects {
-  padding: 8%;
+  padding: 5%;
+  background-color: #ebebeb;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#projects h2 {
+  font-weight: bold;
+}
+#projects .carousel-item {
+  padding: 5rem;
+  width: 30rem;
+}
+#projects .carousel-item h5 {
+  font-weight: bold;
+  color: #212529;
+}
+#projects .carousel-item img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#contact {
+  padding: 17%;
   background-color: #efefef;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#projects h2 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-#projects .portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#projects .portfolio .card {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin: 3%;
-  border: none;
-  width: 300px;
-  text-decoration: none;
-  filter: opacity(90%);
-}
-#projects .portfolio .card a {
-  color: #212529;
   text-align: center;
   text-decoration: none;
-}
-#projects .portfolio .card a #h3gali {
-  margin-top: 30px;
-}
-#projects .portfolio .card a h3 {
-  margin: 3%;
-  font-weight: bold;
-}
-#projects .portfolio .card img {
-  width: 100%;
-}
-#projects .portfolio .card:hover {
-  filter: opacity(100%);
-  transition: 0.4s;
-}
-
-#contact {
-  padding: 17%;
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 #contact h2 {
   font-weight: bold;
@@ -314,10 +326,10 @@ header .nav-link:hover {
   gap: 20px;
   align-items: baseline;
 }
-#contact .socials a {
+#contact .socials .logos {
   width: 50px;
 }
-#contact a:hover {
+#contact .logos:hover {
   transition: 0.6s;
   transform: translateY(-10px);
 }
@@ -364,6 +376,7 @@ html {
 }
 #home .socials {
   margin: 5rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -531,7 +544,7 @@ html {
   justify-self: center;
 }
 #skills .education {
-  margin: 3rem;
+  margin: 5rem;
 }
 #skills .education h4 {
   text-align: center;
@@ -541,65 +554,76 @@ html {
   margin-right: 0.5rem;
   width: 3rem;
 }
+#skills .education .grades {
+  margin: 3rem;
+}
+#skills .education .grades h3 {
+  font-weight: bold;
+}
+#skills .education .grades .calendar {
+  display: flex;
+}
+#skills .education .grades .calendar img {
+  margin: 0;
+  width: 3rem;
+}
+#skills .education .grades .calendar p {
+  align-self: center;
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 5rem;
+}
+
+#services {
+  background-color: #e7e7e7;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#services h2 {
+  font-weight: bold;
+}
 
 #projects {
-  padding: 8%;
+  padding: 5%;
+  background-color: #ebebeb;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#projects h2 {
+  font-weight: bold;
+}
+#projects .carousel-item {
+  padding: 5rem;
+  width: 30rem;
+}
+#projects .carousel-item h5 {
+  font-weight: bold;
+  color: #212529;
+}
+#projects .carousel-item img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#contact {
+  padding: 17%;
   background-color: #efefef;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#projects h2 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-#projects .portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#projects .portfolio .card {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin: 3%;
-  border: none;
-  width: 300px;
-  text-decoration: none;
-  filter: opacity(90%);
-}
-#projects .portfolio .card a {
-  color: #212529;
   text-align: center;
   text-decoration: none;
-}
-#projects .portfolio .card a #h3gali {
-  margin-top: 30px;
-}
-#projects .portfolio .card a h3 {
-  margin: 3%;
-  font-weight: bold;
-}
-#projects .portfolio .card img {
-  width: 100%;
-}
-#projects .portfolio .card:hover {
-  filter: opacity(100%);
-  transition: 0.4s;
-}
-
-#contact {
-  padding: 17%;
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 #contact h2 {
   font-weight: bold;
@@ -610,10 +634,10 @@ html {
   gap: 20px;
   align-items: baseline;
 }
-#contact .socials a {
+#contact .socials .logos {
   width: 50px;
 }
-#contact a:hover {
+#contact .logos:hover {
   transition: 0.6s;
   transform: translateY(-10px);
 }

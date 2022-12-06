@@ -44,7 +44,7 @@
                                     <a class="nav-link" href="#skills">Skills</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#skills">Services</a>
+                                    <a class="nav-link" href="#services">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#projects">Projects</a>
@@ -97,7 +97,7 @@
                 <p>Films</p>
             </div>
             <div>
-                <button>Download CV <img src="./assets/download-solid.png" alt="download-cv"></i></button>
+                <a style="text-decoration:none ;" download="" href=""><button>Download CV <img src="./assets/download-solid.png" alt="download-cv"></i></button></a>
             </div>
         </section>
         <section id="skills">
@@ -145,8 +145,70 @@
                     <p>My personal Journey</p>
                 </div>
                 <div>
-                    <h4><img src="./assets/graduation-cap.png" alt="">Education </h4>
+                    <h4><img src="./assets/graduation-cap.png" alt="education">Education </h4>
                 </div>
+                <div class="grades">
+                    <div>
+                        <h3>Web development</h3>
+                        <span>Academy - CoderHouse</span>
+                        <div class="calendar">
+                            <img src="./assets/fecha.png" alt="time-of-education">
+                            <p>3 Months</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="rounder"></span>
+                    <span class="line"></span>
+                </div>
+                <div class="grades">
+                    <div>
+                        <h3>Grade JavaScript</h3>
+                        <span>Academy - CoderHouse</span>
+                        <div class="calendar">
+                            <img src="./assets/fecha.png" alt="time-of-education">
+                            <p>3 Months</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="rounder"></span>
+                    <span class="line"></span>
+                </div>
+                <div class="grades">
+                    <div>
+                        <h3>Grade ReactsJs</h3>
+                        <span>Academy - CoderHouse</span>
+                        <div class="calendar">
+                            <img src="./assets/fecha.png" alt="time-of-education">
+                            <p>1 Month</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="rounder"></span>
+                    <span class="line"></span>
+                </div>
+                <div class="grades">
+                    <div>
+                        <h3>Grade Back-End</h3>
+                        <span>Academy - CoderHouse</span>
+                        <div class="calendar">
+                            <img src="./assets/fecha.png" alt="time-of-education">
+                            <p>5 Months</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="rounder"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div>
+                <h2>Services</h2>
+                <p>What i offer</p>
             </div>
         </section>
         <section id="projects">
@@ -154,22 +216,49 @@
                 <h2>My Projects</h2>
                 <p>Here you can see some of my last projects, i hope you enjoy them</p>
             </div>
-            <div class="portfolio">
-                <div class="card">
-                    <a href="https://github.com/agustingalindez02/agustin_galindez"><img
-                            src="./assets/picture-profile-circle.png" alt="">
-                        <h3>Source Code</h3>
-                    </a>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="card">
-                    <a href="https://autoescuelagali.netlify.app"><img src="./assets/logo final.png" alt="">
-                        <h3 id="h3gali">Driving School</h3>
-                    </a>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://autoescuelagali.netlify.app"><img src="./assets/logo final.svg" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Driving School</h5>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/agustingalindez02/agustin_galindez"><img
+                            src="./assets/picture-profile-circle.svg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Source code</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/agustingalindez02/Fixture-Word-Cup"><img src="./assets/logo-qatar.png" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fixture Word Cup</h5>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-        </section>
-        <section id="services">
-
+            
+                
         </section>
         <section id="contact">
             <div>
@@ -178,11 +267,11 @@
             </div>
             <div class="socials">
                 <p>Get in touch:</p>
-                <a href="https://github.com/agustingalindez02"><img src="./assets/github.svg" alt="github"></a>
-                <a href="https://www.linkedin.com/in/agustín-galindez-a7953222b/"><img src="./assets/linkedin.svg"
+                <a class="logos" href="https://github.com/agustingalindez02"><img src="./assets/github.svg" alt="github"></a>
+                <a class="logos" href="https://www.linkedin.com/in/agustín-galindez-a7953222b/"><img src="./assets/linkedin.svg"
                         alt="linkedin"></a>
-                <a href="https://discord.com/channels/@me"><img src="./assets/discord.svg" alt="discord"></a>
-                <a href="mailto:agustincoc806@gmail.com"><img src="./assets/email.svg" alt="email"></a>
+                <a class="logos" href="https://discord.com/channels/@me"><img src="./assets/discord.svg" alt="discord"></a>
+                <a class="logos" href="mailto:agustincoc806@gmail.com"><img src="./assets/email.svg" alt="email"></a>
             </div>
         </section>
     </main>
