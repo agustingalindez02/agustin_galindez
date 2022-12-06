@@ -1,25 +1,76 @@
 @import "../colors/colors";
 
+#home {
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $backGroundColor;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    button {
+        padding: 1rem;
+        border: none;
+        border-radius: 6px;
+        color: $secondary;
+        background-color: $primary;
+
+        img {
+            width: 1.3rem;
+        }
+    }
+
+    .socials {
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+    .picture {
+        border: solid 3px $primary;
+        border-radius: 50%;
+        margin: 2rem;
+
+        img {
+            width: 15rem;
+        }
+    }
+}
+
 #about-me {
-    padding: 10%;
+    padding: 16%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .picture{
-        img{
-            border: solid 3px;
-            border-radius: 50%;
-            margin-bottom: 5%;
-            width: 200px;
-        }
-    }
-
+    background-color: $backGroundColor1;
 
     h2 {
         text-align: center;
         font-weight: bold;
+    }
+
+    button {
+        gap: 0.5rem;
+        display: flex;
+        justify-content: baseline;
+        padding: 1rem;
+        border: none;
+        border-radius: 6px;
+        color: $secondary;
+        background-color: $primary;
+
+        img {
+            width: 1.5rem;
+        }
     }
 
     .hobbies {
@@ -40,7 +91,7 @@
 #skills {
     padding: 6%;
     width: 100%;
-    background-color: $backGroundColor1;
+    background-color: $backGroundColor2;
 
     h2 {
         text-align: center;
@@ -180,12 +231,23 @@
             }
         }
     }
+    .education{
+        margin: 3rem;
+        h4{
+            text-align: center;
+            font-weight: bold;
+        }
+        img{
+            margin-right: 0.5rem;
+            width: 3rem;
+        }
+    }
 }
 
 
 #projects {
     padding: 8%;
-    background-color: $backGroundColor;
+    background-color: $backGroundColor3;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -206,19 +268,18 @@
         .card {
             height: max-content;
             margin: 3%;
-            background-color: $backGroundColor;
             border: none;
             width: 300px;
             text-decoration: none;
-            filter: opacity(80%);
+            filter: opacity(90%);
 
             a {
                 color: $primary;
                 text-align: center;
                 text-decoration: none;
 
-                #h3gali{
-                    margin-top:30px ;
+                #h3gali {
+                    margin-top: 30px;
                 }
 
                 h3 {
@@ -240,24 +301,21 @@
 }
 
 #contact {
-    padding: 20%;
-    background-color: $backGroundColor1;
+    padding: 17%;
+    background-color: $backGroundColor4;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
 
     h2 {
         font-weight: bold;
     }
 
-    p {
-        text-align: center;
-    }
-
     .socials {
+        margin: 1rem;
         display: flex;
         gap: 20px;
         align-items: baseline;

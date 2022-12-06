@@ -1,16 +1,16 @@
 @import "../colors/colors";
 
 header {
-    #navbar{
+    #navbar {
         width: 100%;
         position: fixed;
     }
 
-    .navbar-expand-sm .navbar-collapse{
+    .navbar-expand-sm .navbar-collapse {
         justify-content: flex-end;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         background-color: $secondary;
     }
 
@@ -21,6 +21,10 @@ header {
 
     .navbar-brand:hover {
         color: $secondary;
+    }
+
+    .navbar-nav{
+        gap: 1rem;
     }
 
     .nav-link {
