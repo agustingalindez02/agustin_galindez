@@ -1,7 +1,85 @@
 @import "../reset/reset";
 @import "../components/main";
+@import "../components/footer";
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+    footer {
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        .not-rights{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .rights{
+            display: flex;
+            justify-content: flex-start !important;
+        }
+
+        div{
+            h2{
+                margin: 1rem;
+            }
+            p{
+                margin: 1rem;
+            }
+        }
+
+        .links {
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .socials2 {
+            width: 100%;
+            margin: 0;
+            padding: 0 !important;
+
+            a {
+                padding: 0;
+                margin: 0;
+
+                img {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    #home {
+        display: flex;
+
+        .text {
+            display: block;
+            justify-self: flex-end;
+        }
+    }
+
+    .education {
+        margin: 0;
+    }
+
+    .time-line {
+        width: 100%;
+    }
+
+    .scroll {
+        display: none;
+    }
+
     .portfolio {
         display: flex;
         flex-wrap: wrap;
@@ -11,16 +89,73 @@
         padding: 15%;
     }
 
-    #skills{
+    #skills {
         padding: 15%;
+
     }
 
-    #projects{
+    #projects {
         padding: 20%;
+    }
+}
+@media (max-width: 620px) {
+    #home {
+        display: grid;
+        grid-template-areas: "socials picture"
+        "text text";
+
+        .socials{
+            margin: 0;
+            margin-top:3rem ;
+            margin-right: 1rem;
+            grid-area: socials;
+        }
+
+        .picture{
+            width: 15rem;
+            margin: 0;
+            grid-area: picture;
+            img{
+                width: 100%;
+            }
+        }
+
+        .text{
+            grid-area: text;
+        }
+    }
+}
+@media (max-width: 470px) {
+    #projects {
+        .carousel-item {
+            padding: 3rem;
+            width: 20rem;
+            
+                img{
+                    width: 100%;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                }
+        }
     }
 }
 
 @media (max-width: 400px) {
+    footer{
+        width: 100%;
+    }
+    #projects {
+        .carousel-item {
+            padding: 3rem;
+            width: 20rem;
+            
+                img{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+        }
+    }
+
     #about-me {
         padding: 20%;
 

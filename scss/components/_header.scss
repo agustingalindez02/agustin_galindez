@@ -3,10 +3,10 @@
 header {
     #navbar {
         width: 100%;
-        position: fixed;
+        position: fixed !important;
     }
 
-    .navbar-expand-sm .navbar-collapse {
+    .navbar-expand-md .navbar-collapse {
         justify-content: flex-end;
     }
 

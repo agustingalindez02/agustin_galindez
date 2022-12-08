@@ -7,23 +7,15 @@ footer {
     color: $secondary;
     padding: 6rem;
 
-    .rights {
-        margin: 5rem;
-        margin-bottom: 0;
-        p{
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-        }
-        
-    }
-
     .footer {
         display: flex;
+        flex-wrap: wrap;
         gap: 6rem;
         justify-content: center;
 
         .socials2 {
+            display: flex;
+            flex-wrap: nowrap;
             a {
                 margin: 1rem;
                 img {
@@ -31,7 +23,19 @@ footer {
                 }
             }
         }
-
+        .not-rights{
+            display: flex;
+            gap: 6rem;
+        }
+        .rights {
+            width: 20rem;
+            display: flex;
+            justify-content: center;
+            p{
+                font-size: 1rem;
+            }
+            
+        }
         .links {
             display: flex;
             gap: 2rem;
