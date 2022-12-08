@@ -126,6 +126,16 @@
     }
 }
 @media (max-width: 470px) {
+    footer{
+        margin: 0;
+        padding: 0;
+        div{
+            width: fit-content;
+        }
+    }
+    #home{
+        padding-top:5rem ;
+    }
     #projects {
         .carousel-item {
             padding: 3rem;
@@ -141,6 +151,19 @@
 }
 
 @media (max-width: 400px) {
+    #contact{
+        padding:10rem;
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        .socials{
+            .logos{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
     footer{
         width: 100%;
     }

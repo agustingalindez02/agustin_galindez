@@ -975,6 +975,18 @@ footer .footer .links {
   }
 }
 @media (max-width: 470px) {
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+  footer div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #home {
+    padding-top: 5rem;
+  }
   #projects .carousel-item {
     padding: 3rem;
     width: 20rem;
@@ -986,6 +998,17 @@ footer .footer .links {
   }
 }
 @media (max-width: 400px) {
+  #contact {
+    padding: 10rem;
+  }
+  #contact h2 {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .socials .logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
   footer {
     width: 100%;
   }
