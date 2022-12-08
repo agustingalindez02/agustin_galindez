@@ -47,10 +47,10 @@ header .nav-link:hover {
 }
 
 #home {
-  padding: 15%;
+  padding: 12%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   background-color: #e0e0e0;
 }
 #home h1 {
@@ -64,14 +64,19 @@ header .nav-link:hover {
   background-color: #212529;
 }
 #home button img {
+  margin-left: 3px;
   width: 1.3rem;
+}
+#home .text {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 #home .socials {
   margin: 5rem;
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 #home .socials img {
   width: 1.5rem;
@@ -83,6 +88,35 @@ header .nav-link:hover {
 }
 #home .picture img {
   width: 15rem;
+}
+#home .scroll {
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 2rem;
+}
+#home .scroll a {
+  text-decoration: none;
+  color: #212529;
+  display: flex;
+  align-items: center;
+}
+#home .scroll a p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+#home .scroll a img {
+  margin: 0;
+  width: 100%;
+  height: 2rem;
+}
+#home .scroll a #arrow {
+  width: 100%;
+  height: 1rem;
+}
+#home .scroll:hover {
+  transition: 0.5s;
+  transform: translateY(8px);
 }
 
 #about-me {
@@ -355,10 +389,10 @@ html {
 }
 
 #home {
-  padding: 15%;
+  padding: 12%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   background-color: #e0e0e0;
 }
 #home h1 {
@@ -372,14 +406,19 @@ html {
   background-color: #212529;
 }
 #home button img {
+  margin-left: 3px;
   width: 1.3rem;
+}
+#home .text {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 #home .socials {
   margin: 5rem;
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 #home .socials img {
   width: 1.5rem;
@@ -391,6 +430,35 @@ html {
 }
 #home .picture img {
   width: 15rem;
+}
+#home .scroll {
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 2rem;
+}
+#home .scroll a {
+  text-decoration: none;
+  color: #212529;
+  display: flex;
+  align-items: center;
+}
+#home .scroll a p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+#home .scroll a img {
+  margin: 0;
+  width: 100%;
+  height: 2rem;
+}
+#home .scroll a #arrow {
+  width: 100%;
+  height: 1rem;
+}
+#home .scroll:hover {
+  transition: 0.5s;
+  transform: translateY(8px);
 }
 
 #about-me {
