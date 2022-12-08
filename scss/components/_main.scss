@@ -4,7 +4,7 @@
     padding: 12%;
     display: flex;
     justify-content: center;
-    align-items:stretch;
+    align-items: stretch;
     background-color: $backGroundColor;
 
     h1 {
@@ -12,6 +12,7 @@
     }
 
     button {
+        filter: contrast(80%);
         padding: 1rem;
         border: none;
         border-radius: 6px;
@@ -20,8 +21,13 @@
 
         img {
             margin-left: 3px;
-            width: 1.3rem;
+            width: 1.5rem;
         }
+    }
+
+    button:hover {
+        transition: .4s;
+        filter: contrast(100%);
     }
 
     .text {
@@ -38,6 +44,11 @@
 
         img {
             width: 1.5rem;
+        }
+
+        img:hover {
+            transition: .4s;
+            transform: scale(130%);
         }
     }
 
@@ -56,33 +67,34 @@
         margin-top: 2rem;
         width: 2rem;
 
-        a{
+        a {
             text-decoration: none;
             color: $primary;
             display: flex;
-            align-items:center;
+            align-items: center;
 
             p {
                 margin: 0;
-                font-size: 10px;
+                margin-right: 3px;
+                font-size: 13px;
                 font-weight: bold;
             }
-    
+
             img {
-                margin:0;
+                margin: 0;
                 width: 100%;
                 height: 2rem;
             }
 
-            #arrow{
+            #arrow {
                 width: 100%;
                 height: 1rem;
             }
         }
-        
+
     }
 
-    .scroll:hover{
+    .scroll:hover {
         transition: .5s;
         transform: translateY(8px);
     }
@@ -102,6 +114,7 @@
     }
 
     button {
+        filter: contrast(80%);
         gap: 0.5rem;
         display: flex;
         justify-content: baseline;
@@ -114,6 +127,11 @@
         img {
             width: 1.5rem;
         }
+    }
+
+    button:hover {
+        transition: .4s;
+        filter: contrast(100%);
     }
 
     .hobbies {
@@ -274,21 +292,26 @@
             }
         }
     }
+}
 
-    .education {
-        margin: 5rem;
+.education {
+    margin: 5rem;
 
-        h4 {
-            text-align: center;
-            font-weight: bold;
-        }
+    h4 {
+        text-align: center;
+        font-weight: bold;
+    }
 
-        img {
-            margin-right: 0.5rem;
-            width: 3rem;
-        }
+    img {
+        margin-right: 0.5rem;
+        width: 3rem;
+    }
+
+    .time-line {
 
         .grades {
+            width: 50%;
+            position: relative;
             margin: 3rem;
 
 
@@ -313,6 +336,12 @@
                 }
             }
         }
+
+        .right-container {
+            .point {
+                left: -22.5%;
+            }
+        }
     }
 }
 
@@ -326,8 +355,33 @@
     text-align: center;
 
     h2 {
-
         font-weight: bold;
+    }
+
+    .discount {
+        border-radius: 2rem;
+        padding: 5rem;
+background-color: $primary;
+color: $secondary;
+
+        button {
+            filter: contrast(90%);
+            padding: 1rem;
+            border: none;
+            border-radius: 6px;
+            color: $primary;
+            background-color: $secondary;
+
+            img {
+                margin-left: 3px;
+                width: 1.5rem;
+            }
+        }
+
+        button:hover {
+            transition: .4s;
+            filter: contrast(100%);
+        }
     }
 }
 
