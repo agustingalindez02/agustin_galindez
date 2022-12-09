@@ -126,6 +126,9 @@
     }
 }
 @media (max-width: 470px) {
+    #about-me{
+        padding: 10rem;
+    }
     footer{
         margin: 0;
         padding: 0;
@@ -133,7 +136,11 @@
             width: fit-content;
         }
     }
+    #services{
+        padding: 10rem;
+    }
     #home{
+        padding: 10rem;
         padding-top:5rem ;
     }
     #projects {
@@ -151,6 +158,9 @@
 }
 
 @media (max-width: 400px) {
+    .education{
+        margin-top: 2rem;
+    }
     #contact{
         padding:10rem;
         h2{
