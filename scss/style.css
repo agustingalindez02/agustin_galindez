@@ -8,7 +8,7 @@
 
 body {
   color: #212529;
-  background-color: #e0e0e0;
+  background-color: #CECECE;
   font-family: "Montserrat", sans-serif;
   font-size: large;
 }
@@ -21,6 +21,7 @@ html {
 header #navbar {
   width: 100%;
   position: fixed !important;
+  z-index: 10;
 }
 header .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
@@ -51,7 +52,7 @@ header .nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background-color: #e0e0e0;
+  background-color: #dadada;
 }
 #home h1 {
   font-weight: bold;
@@ -105,8 +106,8 @@ header .nav-link:hover {
   width: 2rem;
   -webkit-animation-name: down;
           animation-name: down;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
@@ -156,7 +157,7 @@ header .nav-link:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e0e0e0;
+  background-color: #dadada;
 }
 #about-me h2 {
   text-align: center;
@@ -195,7 +196,7 @@ header .nav-link:hover {
 #skills {
   padding: 6%;
   width: 100%;
-  background-color: #e6e4e4;
+  background-color: #e6e6e6;
 }
 #skills h2 {
   text-align: center;
@@ -348,7 +349,7 @@ header .nav-link:hover {
 }
 
 #services {
-  background-color: #e7e7e7;
+  background-color: #f3f3f3;
   padding: 10%;
   display: flex;
   flex-direction: column;
@@ -384,7 +385,7 @@ header .nav-link:hover {
 
 #projects {
   padding: 5%;
-  background-color: #ebebeb;
+  background-color: #E2E2E2;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -410,7 +411,7 @@ header .nav-link:hover {
 
 #contact {
   padding: 17%;
-  background-color: #efefef;
+  background-color: #F6F6F6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -446,7 +447,7 @@ header .nav-link:hover {
 
 body {
   color: #212529;
-  background-color: #e0e0e0;
+  background-color: #CECECE;
   font-family: "Montserrat", sans-serif;
   font-size: large;
 }
@@ -461,7 +462,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background-color: #e0e0e0;
+  background-color: #dadada;
 }
 #home h1 {
   font-weight: bold;
@@ -515,8 +516,8 @@ html {
   width: 2rem;
   -webkit-animation-name: down;
           animation-name: down;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
@@ -558,7 +559,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e0e0e0;
+  background-color: #dadada;
 }
 #about-me h2 {
   text-align: center;
@@ -597,7 +598,7 @@ html {
 #skills {
   padding: 6%;
   width: 100%;
-  background-color: #e6e4e4;
+  background-color: #e6e6e6;
 }
 #skills h2 {
   text-align: center;
@@ -750,7 +751,7 @@ html {
 }
 
 #services {
-  background-color: #e7e7e7;
+  background-color: #f3f3f3;
   padding: 10%;
   display: flex;
   flex-direction: column;
@@ -786,7 +787,7 @@ html {
 
 #projects {
   padding: 5%;
-  background-color: #ebebeb;
+  background-color: #E2E2E2;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -812,7 +813,7 @@ html {
 
 #contact {
   padding: 17%;
-  background-color: #efefef;
+  background-color: #F6F6F6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -976,7 +977,7 @@ footer .footer .links {
 }
 @media (max-width: 470px) {
   #about-me {
-    padding: 10rem;
+    padding: 7rem;
   }
   footer {
     margin: 0;
@@ -988,10 +989,10 @@ footer .footer .links {
     width: fit-content;
   }
   #services {
-    padding: 10rem;
+    padding: 7rem;
   }
   #home {
-    padding: 10rem;
+    padding: 7rem;
     padding-top: 5rem;
   }
   #projects .carousel-item {
@@ -1009,7 +1010,7 @@ footer .footer .links {
     margin-top: 2rem;
   }
   #contact {
-    padding: 10rem;
+    padding: 7rem;
   }
   #contact h2 {
     display: flex;
@@ -1031,13 +1032,13 @@ footer .footer .links {
     margin-bottom: 2rem;
   }
   #about-me {
-    padding: 20%;
+    padding: 7rem;
   }
   #about-me .hobbies {
     flex-direction: column;
   }
   #contact {
-    padding: 15%;
+    padding: 7rem;
   }
   #contact h2 {
     display: flex;

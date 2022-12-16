@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    background-color:$backGroundColor;
+    background-color:$backGroundColor1;
 
     h1 {
         font-weight: bold;
@@ -68,7 +68,7 @@
     margin-top: 2rem;
     width: 2rem;
     animation-name: down;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 
@@ -114,7 +114,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $backGroundColor;
+    background-color: $backGroundColor1;
 
     h2 {
         text-align: center;
@@ -156,11 +156,10 @@
     }
 }
 
-
 #skills {
     padding: 6%;
     width: 100%;
-    background-color: $backGroundColor1;
+    background-color: $backGroundColor2;
 
     h2 {
         text-align: center;
@@ -354,7 +353,7 @@
 }
 
 #services {
-    background-color: $backGroundColor2;
+    background-color: $backGroundColor3;
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -395,7 +394,7 @@
 
 #projects {
     padding: 5%;
-    background-color: $backGroundColor3;
+    background-color: $backGroundColor4;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -425,7 +424,7 @@
 
 #contact {
     padding: 17%;
-    background-color: $backGroundColor4;
+    background-color: $backGroundColor5;
     width: 100%;
     display: flex;
     flex-direction: column;
